@@ -1,2 +1,2 @@
 # MyTwitter
-This is a simple static page using some web skill, such as html, js and css. Its UI copies from twitter. It's just as same as a twitter when you see.
+This is a simple static page using 3 web-skills, html, js and css. Its UI copies from twitter. And it's just as same as a twitter when you see.
