@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>twitter</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        window.onload=function(){
+                var dropdownImg = document.getElementById('dropdown-img');
+            var dropdownMenu = document.getElementsByClassName('dropdown-menu');
+            console.log(dropdownImg);
+            dropdownImg.onclick = function(){
+                if(dropdownMenu[0].style.display == "none"){
+                    dropdownMenu[0].style.display = "block";
+                    console.log(dropdownMenu[0]);
+                }else{
+                    dropdownMenu[0].style.display = "none";
+                    console.log(dropdownMenu[0]);
+                }
+            }
+            // document.onclick=function(){
+            //     dropdownMenu[0].style.display = "none";
+            // }
+        }
+    </script>
+
+</head>
+<body>
+    <div id="doc">
+        <!-- topbar -->
+        <div class="topbar">
+            <div class="global-nav">
+                <div class="global-nav-inner">
+                    <div class="container">
+                        <div class="icon-bird .bird-topbar-etched"><img src="./img/favicon.ico" alt=""></div>
+                        <div role="navigation" style="display:inline-block">
+                            <ul class="nav nav-left" id="global-actions">
+                                <li>
+                                    <a href="#" style="color:#4AB3F4;border-bottom: 2px solid #4AB3F4; background:url(./img/home-1.png) 14px 14px no-repeat;" class="icon-home">
+                                        <span class="nav-img"></span>
+                                        <span class="nav-txt">主页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon-flash">
+                                        <span class="nav-img"></span>
+                                        <span class="nav-txt">瞬间</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon-warn">
+                                        <span class="nav-img"></span>
+                                        <span class="nav-txt">通知</span>
+                                    </a>
+                                </li>
+                                <li>
+                                <a href="#" class="icon-envelope">
+                                    <span class="nav-img"></span>
+                                    <span class="nav-txt">私信</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-extras pull-right">
+                            <div role="search">
+                                <form action="" class="t1-form form-search">
+                                    <input type="text" placeholder="搜索 Twitter" name="q" autocomplete="off" spellcheck="false" class="search-input">
+                                </form>
+                                <span class="search-icon">
+                                    <button class="icon Icon--medium">
+                                    <img src="./img/search.png" alt="">
+                                    </button>
+                                </span>
+                            </div>
+                            <ul class="nav right-actions">
+                                <li  id="dropdown-toggle">
+                                    <a href="javascript:void(0)" class="dropdown-toggle">
+                                        <img src="./img/user-1.jpg" id="dropdown-img">
+                                    </a>
+                                    <div class="dropdown-menu DashUserDropdown" style="display:none">
+                                        <div class="dropdown-caret"></div>
+                                        <ul>
+                                            <li class="DashUserDropdown-userInfo">
+                                               <b class="fullname1">CKuriSu</b>
+                                               <p class="name">
+                                                    <span class="username1" dir="ltr">
+                                                      @KurisuLeo9
+                                                    </span>
+                                                </p>
+                                            </li>
+                                            <li class="dropdown-divider"></li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">
+                                                <span class="link-icon Icon-me"></span>    
+                                                    个人资料
+                                                </a>
+                                            </li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">
+                                                    <span class="link-icon Icon-list"></span>
+                                                    列表
+                                                </a>
+                                            </li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">
+                                                    <span class="link-icon Icon-flash"></span>
+                                                    瞬间
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-divider"></li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">
+                                                    <span class="link-icon Icon-promateMode"></span>
+                                                    推广模式
+                                                </a>
+                                            </li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">
+                                                    <span class="link-icon Icon-promateStroked"></span>
+                                                    Twitter广告
+                                                </a>
+                                            </li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">
+                                                    <span class="link-icon Icon-analytics"></span>
+                                                    分析
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-divider"></li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">设置和隐私</a>
+                                            </li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">帮助中心</a>
+                                            </li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">键盘快捷键</a>
+                                            </li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">登出 @KurisuLeo9</a>
+                                            </li>
+                                            <li class="dropdown-divider"></li>
+                                            <li class="menu-li-height">
+                                                <a class="navi-a">
+                                                    <span class="link-icon Icon-night"></span>
+                                                    夜间模式
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border-btn">
+                                        <button class="edge-btn">
+                                            <span>发推</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- page outer -->
+        <div id="page-outer">
+            <div id="container" class="AppContent wrapper wrapper-home"> 
+                <!-- left -->
+                <div class="dashboard dashboard-left">
+                    <div class="DPCard module">
+                        <a  class="DPCard-bg ublock"></a>
+                        <div class="DPCard-content">
+                            <a  class="u-inlineBlock DPCard-avatarLink">
+                                <img src="./img/user-1.jpg" alt="" class="DPCard-avatarImage">
+                            </a>
+                            <div class="DPCard-userFields">
+                                <div class="DPCard-name u-textTruncate">
+                                        <a href="#" class="u-text">CKuriSu</a>
+                                </div>
+                                <span class="DPCard-screenname">
+                                        <span class="u-a">@</span>
+                                    <a>
+                                        <span class="u-target">KurisuLeo9</span>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="PCardStats">
+                                <ul class="PCardStats-statList">
+                                    <li>
+                                        <a class="ublock">
+                                            <span class="ublock PCardStats-label">推文</span>
+                                            <span class="ublock PCardStats-value">2,045</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="ublock">
+                                            <span class="ublock PCardStats-label">正在关注</span>
+                                            <span class="ublock PCardStats-value">401</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="ublock">
+                                            <span class="ublock PCardStats-label">关注者</span>
+                                            <span class="ublock PCardStats-value">51</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module trends">
+                        <div class="trend-inner">
+                            <div class="module-header">
+                                <h3><span class="trend-location">你的趋势</span></h3>
+                                <span>·</span>
+                                <span class="middot">更改</span>
+                            </div>
+                            <div class="module-inner">
+                                <ul class="trend-items">
+                                    <li class="trend-item">
+                                        <a >
+                                            <span class="underline">#DontSpoilTheEndgame <img src="./img/Avengers_Endgame_2019.png" alt="" class="twitter-hashflag"></span>
+                                            <div class="trend-item-stats">
+                                                <p>Marvel Entertainment、The Avengers 和其他 1 人正在讨论此趋势话题</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="trend-item">
+                                        <a >
+                                            <span class="underline">#RepublicansForImpeachment</span>
+                                            <div class="trend-item-stats">
+                                                <p>
+                                                    Democratic Coalition calls on Republicans to impeach President Trump
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="trend-item">
+                                        <a>
+                                            <span class="underline">#DontSpoilTheEndgame</span>
+                                            <div class="trend-item-stats">
+                                                <p>Marvel Entertainment、The Avengers 和其他 1 人正在讨论此趋势话题</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="trend-item">
+                                        <a >
+                                            <span class="underline">#DontSpoilTheEndgame</span>
+                                            <div class="trend-item-stats">
+                                                <p>Marvel Entertainment、The Avengers 和其他 1 人正在讨论此趋势话题</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="trend-item">
+                                        <a >
+                                            <span class="underline">#DontSpoilTheEndgame</span>
+                                            <div class="trend-item-stats">
+                                                <p>Marvel Entertainment、The Avengers 和其他 1 人正在讨论此趋势话题</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="trend-item">
+                                        <a >
+                                            <span class="underline">#DontSpoilTheEndgame</span>
+                                            <div class="trend-item-stats">
+                                                <p>Marvel Entertainment、The Avengers 和其他 1 人正在讨论此趋势话题</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main -->
+                <div class="content-main">
+                    <div class="tweet-box">
+                        <div class="tweet-user">
+                            <img src="./img/user-1.jpg" alt="">
+                            <form class="tweet-form" action="" method="post" >
+                                <div class="tweet-content">
+                                    <div contenteditable="true" type="text" class="textarea RichEditor" placeholder="有什么新鲜事?"></div>
+                                    <div class="EmojiPicker">
+                                        <button type="button" class="EmojiPicker-trigger">
+                                            <span class="Icon Icon-pic"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="TweetBoxToolbar">
+                                    <div class="tweetBoxExtras">
+                                        <span class="tweetBoxExtras-item">
+                                            <div class="photo-selector">
+                                                <button class="btn icon-btn">
+                                                    <span class="tweet-camera Icon Icon-media"></span>
+                                                </button>
+                                            </div>
+                                        </span>
+                                        <span class="tweetBoxExtras-item">
+                                            <div class="photo-selector">
+                                                <button class="btn icon-btn">
+                                                    <span class="tweet-camera Icon Icon-gif"></span>
+                                                </button>
+                                            </div>
+                                        </span>
+                                        <span class="tweetBoxExtras-item">
+                                            <div class="photo-selector">
+                                                <button class="btn icon-btn">
+                                                    <span class="tweet-camera Icon Icon-vote"></span>
+                                                </button>
+                                            </div>
+                                        </span>
+                                        <span class="tweetBoxExtras-item">
+                                            <div class="photo-selector">
+                                                <button class="btn icon-btn">
+                                                    <span class="tweet-camera Icon Icon-local"></span>
+                                                </button>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="tweetBox-tweetBtn">
+                                        <button class="edge-btn  tweetSend" disabled>
+                                            <span>发推</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="stream-container">
+                        <div class="stream-item"></div>
+                        <div class="stream">
+                            <ol class="stream-items">
+                                <li class="stream-item">
+                                    <div class="twitter">
+                                        <div class="content">
+                                            <div class="stream-item-header">
+                                                <a href="#" class="account-group">
+                                                    <img src="./img/kh3.jpg" alt="" class="avatar1">
+                                                    <span>
+                                                        <strong class="fullname">KINGDOM HEARTS</strong>
+                                                    </span>
+                                                    <span class="username u-dir u-textTruncate" dir="ltr">@<b>KINGDOMHEARTS</b></span>
+                                                </a>
+                                            </div>
+                                            <div class="stream-item-container">
+                                                <p>The free update is scheduled to be available for download at around the following time: 4/23 7pm PT / 4/23 10pm ET / 4/24 2am UTC The amazing #<b class="con-blue">KingdomHearts</b> team hopes you give it a try!</p>
+                                            </div>
+                                            <div class="stream-item-footer">
+                                                <div class="ProfileTweet-actionList">
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-reply">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>182</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-repeat">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>600</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-love">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>950</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-envelope-s">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                          
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="stream-item">
+                                    <div class="twitter">
+                                        <div class="content">
+                                            <div class="stream-item-header">
+                                                <a href="#" class="account-group">
+                                                    <img src="./img/kh3.jpg" alt="" class="avatar1">
+                                                    <span>
+                                                        <strong class="fullname">KINGDOM HEARTS</strong>
+                                                    </span>
+                                                    <span class="username u-dir u-textTruncate" dir="ltr">@<b>KINGDOMHEARTS</b></span>
+                                                </a>
+                                            </div>
+                                            <div class="stream-item-container">
+                                                <p>The free update is scheduled to be available for download at around the following time: 4/23 7pm PT / 4/23 10pm ET / 4/24 2am UTC The amazing #<b class="con-blue">KingdomHearts</b> team hopes you give it a try!</p>
+                                            </div>
+                                            <div class="stream-item-footer">
+                                                <div class="ProfileTweet-actionList">
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-reply">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>182</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-repeat">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>600</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-love">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>950</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-envelope-s">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="stream-item">
+                                    <div class="twitter">
+                                        <div class="content">
+                                            <div class="stream-item-header">
+                                                <a href="#" class="account-group">
+                                                    <img src="./img/kh3.jpg" alt="" class="avatar1">
+                                                    <span>
+                                                        <strong class="fullname">KINGDOM HEARTS</strong>
+                                                    </span>
+                                                    <span class="username u-dir u-textTruncate" dir="ltr">@<b>KINGDOMHEARTS</b></span>
+                                                </a>
+                                            </div>
+                                            <div class="stream-item-container">
+                                                <p>The free update is scheduled to be available for download at around the following time: 4/23 7pm PT / 4/23 10pm ET / 4/24 2am UTC The amazing #<b class="con-blue">KingdomHearts</b> team hopes you give it a try!</p>
+                                            </div>
+                                            <div class="stream-item-footer">
+                                                <div class="ProfileTweet-actionList">
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-reply">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>182</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-repeat">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>600</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-love">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>950</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-envelope-s">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="stream-item">
+                                    <div class="twitter">
+                                        <div class="content">
+                                            <div class="stream-item-header">
+                                                <a href="#" class="account-group">
+                                                    <img src="./img/kh3.jpg" alt="" class="avatar1">
+                                                    <span>
+                                                        <strong class="fullname">KINGDOM HEARTS</strong>
+                                                    </span>
+                                                    <span class="username u-dir u-textTruncate" dir="ltr">@<b>KINGDOMHEARTS</b></span>
+                                                </a>
+                                            </div>
+                                            <div class="stream-item-container">
+                                                <p>The free update is scheduled to be available for download at around the following time: 4/23 7pm PT / 4/23 10pm ET / 4/24 2am UTC The amazing #<b class="con-blue">KingdomHearts</b> team hopes you give it a try!</p>
+                                            </div>
+                                            <div class="stream-item-footer">
+                                                <div class="ProfileTweet-actionList">
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-reply">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>182</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-repeat">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>600</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-love">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>950</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-envelope-s">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                          
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="stream-item">
+                                    <div class="twitter">
+                                        <div class="content">
+                                            <div class="stream-item-header">
+                                                <a href="#" class="account-group">
+                                                    <img src="./img/kh3.jpg" alt="" class="avatar1">
+                                                    <span>
+                                                        <strong class="fullname">KINGDOM HEARTS</strong>
+                                                    </span>
+                                                    <span class="username u-dir u-textTruncate" dir="ltr">@<b>KINGDOMHEARTS</b></span>
+                                                </a>
+                                            </div>
+                                            <div class="stream-item-container">
+                                                <p>The free update is scheduled to be available for download at around the following time: 4/23 7pm PT / 4/23 10pm ET / 4/24 2am UTC The amazing #<b class="con-blue">KingdomHearts</b> team hopes you give it a try!</p>
+                                            </div>
+                                            <div class="stream-item-footer">
+                                                <div class="ProfileTweet-actionList">
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-reply">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>182</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-repeat">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>600</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-love">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>950</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-envelope-s">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>   
+                                <li class="stream-item">
+                                    <div class="twitter">
+                                        <div class="content">
+                                            <div class="stream-item-header">
+                                                <a href="#" class="account-group">
+                                                    <img src="./img/kh3.jpg" alt="" class="avatar1">
+                                                    <span>
+                                                        <strong class="fullname">KINGDOM HEARTS</strong>
+                                                    </span>
+                                                    <span class="username u-dir u-textTruncate" dir="ltr">@<b>KINGDOMHEARTS</b></span>
+                                                </a>
+                                            </div>
+                                            <div class="stream-item-container">
+                                                <p>The free update is scheduled to be available for download at around the following time: 4/23 7pm PT / 4/23 10pm ET / 4/24 2am UTC The amazing #<b class="con-blue">KingdomHearts</b> team hopes you give it a try!</p>
+                                            </div>
+                                            <div class="stream-item-footer">
+                                                <div class="ProfileTweet-actionList">
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-reply">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>182</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-repeat">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>600</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-love">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                            <div class="ProfileTweet-actionCount">
+                                                                <span>950</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ProfileTweet-action">
+                                                        <button class="ProfileTweet-actionButton Icon-envelope-s">
+                                                            <div class="IconContainer">
+                                                                <span class="link-icon  link-icon-up"></span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right -->
+                <div class="dashboard dashboard-right">
+                    <div class="module dbr-module">
+                        <div class="flex-module">
+                            <div class="flex-module-header">
+                                <h3>推荐关注</h3>
+                                <small>· </small>
+                                <button type="button" class="btn-link">
+                                    <small>刷新</small>
+                                </button>
+                                <small class="view-all">
+                                        · 
+                                    <a href="#" class="view-all-link">查看全部</a>
+                                </small>
+                            </div>
+                            <div class="flex-module-inner">
+                                <div class="UserSmallListItem account-summary">
+                                    <div class="dismiss"></div>
+                                    <div class="content">
+                                        <a href="#" class="account-group">
+                                            <img src="./img/user-5.png" alt="" class="avatar">
+                                            <span class="account-group-inner">
+                                                <strong class="fullname">いぬかみ </strong>
+                                                <span class="username u-dir u-textTruncate" dir="ltr">@<b>inukami_hikari</b></span>
+                                            </span>
+                                        </a>
+                                        <div class="user-actions">
+                                            <span class="user-actions-follow-btn">
+                                                <button type="button" class="edgeBtn">
+                                                    <span>关注</span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="UserSmallListItem account-summary UserSmallListItem-mt">
+                                    <div class="dismiss"></div>
+                                    <div class="content">
+                                        <a href="#" class="account-group">
+                                            <img src="./img/user-4.png" alt="" class="avatar">
+                                            <span class="account-group-inner">
+                                                <strong class="fullname">明日方舟 </strong>
+                                                <span class="username u-dir u-textTruncate" dir="ltr">@<b>arknight_</b></span>
+                                            </span>
+                                        </a>
+                                        <div class="user-actions">
+                                            <span class="user-actions-follow-btn">
+                                                <button type="button" class="edgeBtn">
+                                                    <span>关注</span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="UserSmallListItem account-summary UserSmallListItem-mt">
+                                    <div class="dismiss"></div>
+                                    <div class="content">
+                                        <a href="#" class="account-group">
+                                            <img src="./img/user-3.png" alt="" class="avatar">
+                                            <span class="account-group-inner">
+                                                <strong class="fullname">AinariMilo </strong>
+                                                <span class="username u-dir u-textTruncate" dir="ltr">@<b>sekai_</b></span>
+                                            </span>
+                                        </a>
+                                        <div class="user-actions">
+                                            <span class="user-actions-follow-btn">
+                                                <button type="button" class="edgeBtn">
+                                                    <span>关注</span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-module import-prompt">
+                            <div class="flex-module-footer">
+                                <!-- icon -->
+                              <a href="" class="tooltip u-tableCell u-alignMiddle">
+                                    <span class="link-icon Icon-me"></span>
+                              </a>
+                              <a href="" class="flex-module-footer-findUser">寻找你认识的人</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module Footer">
+                        <div class="flex-module">
+                                <div class="flex-module-inner js-items-container">
+                                        <ul class="u-cf">
+                                          <li class="Footer-item Footer-copyright copyright">© 2019 Twitter</li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">关于</a>
+                                          </li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">帮助中心</a></li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">条款</a>
+                                          </li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">隐私政策</a></li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">Cookies</a></li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">广告信息</a></li>
+                                          <li class="Footer-item"><a class="Footer-link" href=#" rel="noopener">商标</a></li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">博客</a>
+                                          </li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">状态</a>
+                                          </li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">应用</a></li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">工作机会</a></li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">市场营销</a></li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">企业</a></li>
+                                          <li class="Footer-item"><a class="Footer-link" href="#" rel="noopener">开发者</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                        </div>
+                        <div class="flex-module Footer-adsModule">
+                            <a href="" class="flex-module-footer-findUser footer-fontsize">在 Twitter 上投放广告</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
